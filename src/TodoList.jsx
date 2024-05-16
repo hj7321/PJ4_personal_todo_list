@@ -1,11 +1,14 @@
 import "./App.css";
 
-function TodoList({ list: { title, content, id, isDone }, deleteList, toggleList }) {
+function TodoList({
+  list: { title, content, id, isDone },
+  deleteList,
+  toggleList,
+}) {
   return (
     <li key={id} className="list-box">
       <h3>
-        {isDone ? "✅" : "📌"}
-        {title}
+        {isDone ? "✅" : "📌"}{title}
       </h3>
       <p>{content}</p>
       <button

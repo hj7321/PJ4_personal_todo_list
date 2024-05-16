@@ -9,7 +9,7 @@
 header, section {
   border-radius: 10px;
   padding: 30px;
-  background-color: whitesmoke;
+  background-color: rgb(230, 249, 232);
 }
 
 header h1 {
@@ -41,12 +41,12 @@ input {
   font-size: 1em;
   font-weight: bold;
   font-family: inherit;
-  background-color: #16ebeb;
+  background-color: #16eba1;
   cursor: pointer;
 }
 
 .add-btn:hover {
-  background-color: #0fb1b1;
+  background-color: #109868;
 }
 
 section {
@@ -59,14 +59,17 @@ section h1 {
   margin-bottom: 10px;
 }
 
-article {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .list-box {
-  border: 3px solid #30fd6a;
+  border: 3px solid #16eba1;
   border-radius: 10px;
   background-color: white;
   width: fit-content;
@@ -87,7 +90,8 @@ h3 {
 }
 
 .delete-btn,
-.complete-btn {
+.complete-btn,
+.cancel-btn {
   cursor: pointer;
   background-color: white;
   color: black;
@@ -113,6 +117,16 @@ h3 {
 
 .complete-btn:hover {
   background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  border: 2px solid green;
+}
+
+.cancel-btn:hover {
+  background-color: green;
   color: white;
   font-weight: bold;
 }

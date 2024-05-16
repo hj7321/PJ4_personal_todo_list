@@ -34,8 +34,28 @@ Currently, two official plugins are available:
 ## 1. components 폴더 생성 및 4개의 컴포넌트 생성
 
 - `components`라는 폴더를 생성하고, 그 폴더 아래에 4개의 jsx 파일을 생성하였다.
-  - `TodoContainer.jsx` 파일:
-  - `TodoForm.jsx` 파일:
-  - `TodoList.jsx` 파일:
-  - `TodoItem.jsx` 파일:
-- 각 jsx 파일은 재사용할 컴포넌트이다.
+- 각 jsx 파일은 컴포넌트이다.
+
+## 2. `TodoContainer.jsx` 파일 생성 및 코드 작성
+
+- 웹페이지의 뼈대를 잡는 파일
+- 크게 헤더(header) 영역과 섹션(section) 영역으로 나뉜다.
+- 헤더 영역에는 웹페이지의 전체 제목을 보여주는 h1 태그와 `TodoForm` 컴포넌트가 포함되어 있다.
+- 섹션 영역에는 `TodoList` 컴포넌트 2개가 포함되어 있다.
+- `todos` state가 정의되어 있다.
+
+## 3. `TodoForm.jsx` 파일 생성 및 코드 작성
+
+- 헤더 부분에 제목과 내용을 입력하는 폼 태그를 나타내는 파일
+- 부모 컴포넌트인 `TodoContainer` 컴포넌트에서 `setTodos` props를 받아온다.
+- 비제어 컴포넌트(`FormData`)
+
+## 4. `TodoList.jsx` 파일 생성 및 코드 작성
+
+-
+
+## 5. `TodoItem.jsx` 파일 생성 및 코드 작성
+
+## 6. `App.jsx` 파일 내용 대거 수정
+
+- `TodoContainer` 컴포넌트를 리턴하고, `TodoContainer` 안에 있는 모든 요소를

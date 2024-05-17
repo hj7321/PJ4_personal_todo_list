@@ -1,5 +1,5 @@
 const TodoForm = ({ setTodos }) => {
-  const addTodoBox = (e) => {
+  const addTodos = (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
@@ -23,7 +23,7 @@ const TodoForm = ({ setTodos }) => {
   };
 
   return (
-    <form onSubmit={addTodoBox}>
+    <form onSubmit={addTodos}>
       <label>
         제목&ensp;
         <input type="text" name="title" />

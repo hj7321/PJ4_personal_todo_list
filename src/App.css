@@ -6,7 +6,8 @@
   text-align: center;
 }
 
-header, section {
+header,
+section {
   border-radius: 10px;
   padding: 30px;
   background-color: rgb(230, 249, 232);
